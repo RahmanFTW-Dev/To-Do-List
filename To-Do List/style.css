@@ -1,0 +1,104 @@
+body {
+    font-family: Tahoma, sans-serif; /* Set font to Tahoma */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Dark background color for dark mode */
+    color: #fff; /* White text color for better contrast */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Dark background color for container */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White color for heading */
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007bff; /* Blue border color for input field */
+    border-radius: 4px;
+    background-color: #222; /* Dark background color for input field */
+    color: #fff; /* White text color for input field */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background color for button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #444; /* Dark background color for task items */
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow for active tasks */
+}
+
+.completed-task {
+    color: #777; /* Gray out the text color for completed tasks */
+    text-decoration: line-through; /* Add strikethrough for completed tasks */
+    box-shadow: none; /* Remove box-shadow for completed tasks */
+    animation: slideDown 0.5s ease; /* Animation for completed tasks */
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px); /* Initial position above the list */
+        opacity: 0; /* Initially invisible */
+    }
+    100% {
+        transform: translateY(0); /* Final position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.delete-btn {
+    background-color: transparent; /* Remove background color */
+    color: #dc3545; /* Red color for the "X" */
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.delete-btn:hover {
+    color: #c82333; /* Darker red on hover */
+}
+
+.complete-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background color for complete button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.complete-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
