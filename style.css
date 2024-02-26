@@ -1,0 +1,147 @@
+/* Resetting default margin and padding */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Tahoma, sans-serif;
+    background-image: url('image.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text color */
+    position: relative; /* Set position to relative for centering */
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* White background with slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue heading color */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin: 0 auto; /* Center the input field */
+    margin-bottom: 10px; /* Add some space below the input field */
+    display: block; /* Ensure it's a block element */
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2); /* White background with slight transparency */
+    color: #fff; /* White text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 0 auto; /* Center the button */
+    display: block; /* Ensure it's a block element */
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Task list styles */
+.task-list, .completed-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Task item styles */
+.task-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2); /* Black mica effect with transparency */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Decreased margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.completed-task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: line-through;
+    color: #fff;
+}
+
+/* Task text styles */
+.task-text {
+    flex-grow: 1; /* Allow task text to grow and take remaining space */
+}
+
+/* X and Complete button styles */
+.task-controls {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.delete-btn,
+.complete-btn {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.2); /* Black mica effect with transparency */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* Add margin between X and Complete buttons */
+}
+
+.delete-btn:hover,
+.complete-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Darker mica effect on hover */
+}
+
+/* Add gap and horizontal line */
+.separator {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* White mica effect font */
+.white-mica {
+    color: white;
+    font-family: Tahoma, sans-serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo and message in bottom right corner */
+.bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.bottom-right img {
+    width: 50px;
+    height: 50px;
+}
